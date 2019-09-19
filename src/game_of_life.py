@@ -51,12 +51,11 @@ class GameOfLife:
             return grid[x:x + 2, y:y + 2]
 
     @staticmethod
-    def _next_cell_state(cell_state, n_alive):
+    def _next_cell_state(cell_state, n_neighbours):
         """
         Returns the new cell state 0 (dead) or 1 (alive). New state is determined using the current cell state
         and number of alive neighbours based on the rules in Conway's Game of Life.
         """
-        n_neighbours = n_alive - cell_state
         if (cell_state == 1 and (n_neighbours not in range(2, 4))) or (cell_state == 0 and n_neighbours != 3):
             return 0
         return 1
