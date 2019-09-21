@@ -8,7 +8,6 @@ function createGrid(n_rows, n_columns){
         var tr = grid.appendChild(document.createElement('tr'))
         for (var i=0; i<n_columns; ++i){
             var td = grid.appendChild(document.createElement('td'))
-
         }
     }
     return grid
