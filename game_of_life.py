@@ -26,16 +26,15 @@ class GridThread(Thread):
         self._pause_event.set()
 
     def reset(self):
-        self.model.reset_grid()
+        current_state = self.model.reset_grid()
+        socketio.emit('nextState', current_state, broadcast=True)
 
     def change_cell(self, x, y):
-        print(x, y)
         self.model.toggle_cell_state(x, y)
 
     def _evolve_state(self):
         next_state = self.model.evolve()
         socketio.emit('nextState', next_state, broadcast=True)
-        print(next_state)
 
     def run(self):
         self._pause_event.set()
@@ -80,7 +79,9 @@ def reset_grid_state():
 @socketio.on('updateCell')
 def update_cell(msg):
     if thread.isAlive():
-        thread.change_cell(x=msg['x'], y=msg['y'])
+        x = int(msg['x'])
+        y = int(msg['y'])
+        thread.change_cell(x, y)
 
 
 if __name__ == '__main__':

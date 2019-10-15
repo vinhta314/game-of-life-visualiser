@@ -34,8 +34,13 @@ class CellularAutomationModel:
     def reset_grid(self):
         """
         Resets the grid array to a random state.
+
+        :returns
+            dict: A dictionary representation of the state of cells in the grid
         """
         self.grid = self._randomised_grid()
+
+        return self._json_formatted_grid()
 
     def _calculate_alive_neighbours(self, x, y, cell_state, grid):
         """
