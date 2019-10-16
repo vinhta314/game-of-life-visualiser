@@ -18,7 +18,7 @@ class GridThread(Thread):
     def __init__(self):
         super().__init__()
         self.model = CellularAutomationModel()
-        self.delay = 0.5
+        self.delay = 1
         self._pause_event = Event()
 
     def pause(self):
