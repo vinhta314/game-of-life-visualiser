@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template
 from flask_socketio import SocketIO
 from threading import Thread, Event
@@ -85,7 +87,9 @@ def update_cell(msg):
 
 
 if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
     socketio.run(
         app,
-        host='0.0.0.0'
+        host='0.0.0.0',
+        port=port
     )
