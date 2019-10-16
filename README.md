@@ -1,6 +1,8 @@
 # game-of-life-visualiser
 ## Introduction
-
+### Background
+The "Game of Life" is a cellular automation model that
+### Application
 
 ## Setup
 Clone the repository locally using 
