@@ -37,7 +37,7 @@ The `stop` button can be used to pause the grid evolutions.
 ### Reset
 Once the grid model has started, the `Reset` button can be used to reinitialise the grid to a random state. This button will also work in the paused grid state.
 ### Clickable cells
-Each cell on the grid can be clicked. On click, the grid state will toggle between `dead` and `alive`. These changes will therefore affect the state of the next grid, removing the model's dependancy on the intial state. 
+Each cell on the grid can be clicked. On click, the grid state will toggle between `dead` and `alive`. These changes will affect the state of the next grid, removing the model's dependancy on the intial state. 
 
 ## Screenshot
 ![image](https://user-images.githubusercontent.com/48162231/66879688-29273600-efb7-11e9-90ae-396d2024e4bd.png)
