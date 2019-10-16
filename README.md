@@ -12,6 +12,7 @@ The next state of a cell is determined by the current state of its eight nearest
 Learn more about the "Game of Life" [here](http://mathworld.wolfram.com/GameofLife.html).
 
 ### Application
+This project provides a visual representation of the game of life which uses Python to model the grid evolutions and WebSockets to communicate to the client. The application is designed to allow users to change the state of cells on the client side during the evolutionary process, meaning the model is no longer a zero-player game. 
 
 ## Setup
 Clone the repository locally using 
