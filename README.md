@@ -1,7 +1,7 @@
 # game-of-life-visualiser
 ## Introduction
-### Background
-The "Game of Life" is a cellular automation model that
+### Game of Life
+The "Game of Life" is a cellular automation model that was devised to simulate the evolutionary process. The sim 
 ### Application
 
 ## Setup
