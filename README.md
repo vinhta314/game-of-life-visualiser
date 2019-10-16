@@ -1,7 +1,16 @@
 # game-of-life-visualiser
 ## Introduction
 ### Game of Life
-The "Game of Life" is a cellular automation model that was devised to simulate the evolutionary process. The sim 
+The "Game of Life" is a cellular automation model that was devised to simulate the evolutionary process. The model consists of a 2-dimenstional grid where the cells can take on one of two states, 'dead' or 'alive'. The next evolutionary state is determined by current grid state. The evolutionary process is therefore entirely dependant on the initial state, making it a zero-player game. 
+
+The next state of a cell is determined by the current state of its eight nearest neighbours. The rules are:
+* Any 'alive' cell with fewer than two 'alive' neighbours dies
+* Any 'alive' cell with two or three 'alive' neighbours remain 'alive'
+* Any 'alive' cell with more than three 'alive' neighbours dies
+* Any 'dead' cell with three 'alive' neighbours is revived
+
+Learn more about the "Game of Life" [here](http://mathworld.wolfram.com/GameofLife.html).
+
 ### Application
 
 ## Setup
