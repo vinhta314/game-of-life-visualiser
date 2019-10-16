@@ -1,1 +1,0 @@
-web: python game_of_life.py
