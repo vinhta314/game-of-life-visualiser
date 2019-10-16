@@ -15,7 +15,7 @@ To start the app, move to the root directory `game-of-life-visualiser` and run t
 ```
 python game_of_life.py
 ```
-The app will now be running at the address `http://0.0.0.0:5000/`
+The app will now be running locally at `http://0.0.0.0:5000/`
 
 ## Functionality 
 
